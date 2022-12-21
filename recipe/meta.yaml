@@ -1,5 +1,5 @@
 {% set name = "soxs" %}
-{% set version = "4.1.0" %}
+{% set version = "4.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/soxs-{{ version }}.tar.gz
-  sha256: 924a88fa1c5acf7611a0888e86ce6bf7972c9801a26fa3e04a1657eb961a88d2
+  sha256: 8b48f57c099eb1c4124d85edd5d89ff2c8590eeb6542a6a9938d6a153f0d9482
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 0
 
 requirements:
   build:
