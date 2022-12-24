@@ -1,5 +1,5 @@
 {% set name = "soxs" %}
-{% set version = "4.2.0" %}
+{% set version = "4.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/soxs-{{ version }}.tar.gz
-  sha256: 8b48f57c099eb1c4124d85edd5d89ff2c8590eeb6542a6a9938d6a153f0d9482
+  sha256: 056b095b58ff632d1e5e8455b29aaaf38b29131a813a3a1d9f2884d7af2c228e
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
@@ -30,10 +30,10 @@ requirements:
     - wheel >=0.36.2
   run:
     - python
-    - astropy >=3.0
+    - astropy >=4.0
     - tqdm
     - pooch
-    - h5py
+    - h5py >=3.0
     - scipy
     - pyyaml
     - regions
