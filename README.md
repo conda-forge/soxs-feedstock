@@ -1,11 +1,11 @@
-About soxs
-==========
+About soxs-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/soxs-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/lynx-x-ray-observatory/soxs/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/soxs-feedstock/blob/main/LICENSE.txt)
 
 Summary: Simulated Observations of X-ray Sources
 
