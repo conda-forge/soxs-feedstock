@@ -1,5 +1,5 @@
 {% set name = "soxs" %}
-{% set version = "4.8.3" %}
+{% set version = "4.8.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/soxs-{{ version }}.tar.gz
-  sha256: 4585a4c4fadf2489beefc6f2f988408926ad5f3ccf006900f53d42566bf8fbfa
+  sha256: ff24648e4658aee4aeb9fb39fb4e4b105be96db8b9b7df80998ae88107aced69
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
@@ -19,6 +19,7 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - python
     - numpy
