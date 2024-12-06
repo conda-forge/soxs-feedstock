@@ -11,7 +11,7 @@ source:
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -31,7 +31,7 @@ requirements:
     - wheel >=0.36.2
   run:
     - python
-    - astropy >=4.0
+    - astropy-base >=4.0
     - tqdm
     - pooch
     - h5py >=3.0
